@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+    #nav {
+        width:100%;
+        height:60px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Acme', sans-serif;
+
+    }
+    a{
+        text-decoration: none;
+        color:brown;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #showProfiles{
+        width:30%;
+        height:300px;
+        /* border:1px solid blue; */
+        margin:auto;
+    }
+
+    #showProfiles  > p{
+        /* border:1px solid green; */
+        width:80%;
+        text-align: center;
+        font-size: 25px;
+        color:red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    span{
+        color:green;
+    }
+    button{
+        padding:10px 20px;
+        border-color: transparent;
+        display: block;
+        margin:auto;
+        border-radius:10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: rgba(139, 250, 3, 0.958);
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: rgba(220, 13, 148, 0.549);
+    }
+    #heading{
+        font-size: 25px;
+        text-align: center;
+        font-family:monospace;
+    }
+    </style>
+</head>
+<body onload="seeProfiles()">
+    <div id="nav">
+        <p> <a href="profile.html"> Profile</a></p>
+        <p> <a href="lectures.html">Lectures</a> </p>
+        <p> <a href="assignments.html">Assignments</a> </p>
+    </div>
+    <p id="heading">Profiles</p>
+    <div id="showProfiles">
+        <p>NAME : <span id="showname"></span></p>
+        <p>ID : <span id="showid"></span></p>
+        <p>USERNAME : <span id="showusername"></span></p>
+        <p>PASSWORD : <span id="showpassword"></span></p>
+
+    </div>
+
+    <button onclick="changeDetails()">Change Details</button>
+</body>
+</html>
+<script src="script.js"></script>
