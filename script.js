@@ -148,7 +148,7 @@ class Admin extends User{
 
 
     checkAdminLogin(username,password){
-        if(username=="madhu" && password=="1234"){
+        if(username=="Admin" && password=="123"){
             console.log("in admin login ");
             console.log("login successful");
             alert("Admin Login Successful")
